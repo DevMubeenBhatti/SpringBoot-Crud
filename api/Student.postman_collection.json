@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "e2369104-4406-41f2-a219-44c94e00b073",
+		"name": "Student",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add",
+			"item": [
+				{
+					"name": "add-single",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6,\r\n    \"name\": \"Hassan Javaid\",\r\n    \"address\":\"Lahore\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1447/addStudent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1447",
+							"path": [
+								"addStudent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add-multi",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"id\":\"7\",\r\n        \"name\":\"ali\",\r\n        \"address\":\"lhr\"\r\n    },\r\n    {\r\n        \"id\":\"8\",\r\n        \"name\":\"ahamd\",\r\n        \"address\":\"lhr\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1447/addStudents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1447",
+							"path": [
+								"addStudents"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "get",
+			"item": [
+				{
+					"name": "get-single",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1447/student/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1447",
+							"path": [
+								"student",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1447/students",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1447",
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "delete",
+			"item": [
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1447/student/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1447",
+							"path": [
+								"student",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "update",
+			"item": [
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":2,\r\n    \"name\":\"Aneeq\",\r\n    \"address\":\"Lahore\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/updateStudent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"updateStudent"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
