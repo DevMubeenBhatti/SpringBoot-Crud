@@ -1,0 +1,93 @@
+(for spring project)
+
+https://start.spring.io/
+
+dependencies
+===> spring web
+     H2 Database
+     Lombok
+     Spring Data JPA
+
+
+https://www.javatpoint.com/spring-boot-crud-operations
+
+
+https://www.javatpoint.com/jpa-object-relational-mapping
+
+(run app)mvnw spring-boot:run
+http://localhost:9091/
+
+http://localhost:9091/h2-console/login
+
+
+
+https://www.youtube.com/watch?v=uBjeeUfnhUM
+https://mkyong.com/spring-boot/spring-boot-hello-world-example-jsp/
+
+
+
+1:add anotation in student entitiy
+2:doa (Data Access Object) inside create a doa file and create interface in => StudentRepository
+2: add parmeter doa repositry file <Student, Integer>
+
+3: service @service @Autowired
+
+
+
+*****************************
+***********************
+Question in java...
+***********************
+
+1: static non-static
+
+2: count number of object in java
+
+3: Anonymous ojb
+
+
+JPA Object Relational Mapping
+
+repositry
+
+**************************
+JPA (java persistence API)
+ORM (Object Relational Mapping)
+ORM => class name will be a table name & class properties will be a table columns
+need some tools
+1: Hibernate
+2: iBatis
+3: TopLink
+then java persistence api
+
+
+=======================
+postman
+=======================
+http://localhost:9090/addUser
+
+Post=>addUser
+{
+    "id":1,
+    "name":"Mubeen",
+    "address":"Faisalabad"
+}
+http://localhost:9090/addUsers
+Post=>addUsers
+[
+    {
+        "id":2,
+        "name": "Ahmad",
+        "address": "Faisalabad"
+    },
+    {
+        "id":3,
+        "name": "Zeeshan",
+        "address": "Faisalabad"
+    }
+]
+http://localhost:9090/users
+get=> all user from list
+
+http://localhost:9090/user/3
+Get=>get user id past in url for single user
